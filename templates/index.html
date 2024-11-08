@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boggle Game</title>
+  <meta name="author" content="DNEL2">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/static/style.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <main>
+
+    <h1>It's Boggle Time!</h1>
+
+    <section id="boggle">
+
+      <table class="board">
+        <tbody>
+          {% for row in board %}
+          <tr>
+            {% for cell in row %}
+            <td>{{ cell }}</td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <p>
+        High Score: <span class="h_score">{{ highscore }}</span> in <span class="num_plays">{{ nplays }}</span> plays
+      </p>
+
+      <p>
+        Score: <span class="score">0</span>
+        Seconds Left: <span class="timer"></span>
+      </p>
+
+      <form method="POST" class="add-word">
+        <input name="word" class="word" autofocus>
+        <button>Submit</button>
+      </form>
+
+      <p class="msg">
+        <!-- our JS will put messages here dynamically -->
+      </p>
+
+      <ul class="words">
+        <!-- our JS will words here as they score -->
+      </ul>
+
+    </section>
+
+
+  </main>
+  <script src="http://unpkg.com/jquery"></script>
+
+  <script src="https://unpkg.com/axios@0.19.0/dist/axios.js"></script>
+
+  <script src="/static/app.js"></script>
+
+  <script>
+    let game = new BoggleGame("boggle", 60);
+  </script>
+
+</body>
+
+</html>

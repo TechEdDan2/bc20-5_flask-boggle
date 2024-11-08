@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: "Sour Gummy", sans-serif;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 500px;
+    background-color: lightskyblue;
+    padding: 1rem;
+}
+
+
+.board {
+    border: 1px solid blue;
+}
+
+td {
+    font-size: 1.5rem;
+    padding: 0.5rem 0.65rem;
+    border: 1px solid rgb(255, 120, 47);
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.h_score,
+.num_plays {
+    color: red;
+}
