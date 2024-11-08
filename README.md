@@ -40,7 +40,7 @@ I got to practice putting a lot of pieces together to make this project function
 
 ### Continued development
 
-I would like to make the game look better with some updates. I focussed on understanding how the project 
+I would like to make the game look better with some updates. I focussed on understanding how the project went together and not on the UI / UX. 
 
 ### Useful resources
 
