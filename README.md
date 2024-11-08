@@ -45,7 +45,7 @@ I would like to make the game look better with some updates. I focussed on under
 ### Useful resources
 
 - [MDN](https://developer.mozilla.org/en-US/) - As always, I used the MDN resource when I had a quick question.
-- [Springboard] (https://www.springboard.com/) - where the challenge came from
+- [Springboard](https://www.springboard.com/) - where the challenge came from
 
 ## Author
 
